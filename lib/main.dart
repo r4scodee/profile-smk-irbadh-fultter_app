@@ -50,7 +50,7 @@ class _ProfilePageState extends State<ProfilePage> with SingleTickerProviderStat
     )..repeat();
 
     // hide celebration automatically after a short time to keep focus on content
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(Duration(seconds: 5), () {
       if (mounted) setState(() => _showCelebration = false);
     });
   }
@@ -141,7 +141,7 @@ class _CelebrationBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      elevation: 5,
+      elevation: 2,
       borderRadius: BorderRadius.circular(12),
       color: Colors.white,
       child: Container(
