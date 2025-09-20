@@ -141,7 +141,7 @@ class _CelebrationBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      elevation: 2,
+      elevation: 5,
       borderRadius: BorderRadius.circular(12),
       color: Colors.white,
       child: Container(
